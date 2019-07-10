@@ -1,7 +1,6 @@
 *.pyc
 tags
 test
-models
 .idea
 datasets/
 .env
