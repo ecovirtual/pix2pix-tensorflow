@@ -1,6 +1,9 @@
 <html>
 <body>
 
+<div>edges2anime</div>
+<div id="edges2anime"></div>
+
 <div>edges2cats</div>
 <div id="edges2cats"></div>
 
@@ -32,6 +35,22 @@ function main() {
     elem.appendChild(editor.view.ctx.canvas)
     editors.push(editor)
   }
+
+
+  create_editor({
+    name: "edges2anime",
+    weights_url: "/models/anime_pix2pix.pict",
+    mode: "line",
+    clear: "#FFFFFF",
+    colors: {
+      line: "#000000",
+      eraser: "#ffffff",
+    },
+    draw: "#000000",
+    initial_input: "/0000_1000.jpeg",
+    initial_output: "/edges2shoes-output.png",
+    sheet_url: "/edges2shoes-sheet.jpg",
+  })
 
   create_editor({
     name: "edges2cats",
